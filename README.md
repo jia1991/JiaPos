@@ -1,4 +1,4 @@
-# simpack
+# JiaPos
 
 > A Vue.js project
 
