@@ -9,7 +9,7 @@
     <h1>{{ msg }}{{$store.state.count}}</h1>
     <div class="menu">
       <mt-popup v-model="popupVisible" position="left">
-        <count></count>
+        <left-temp></left-temp>
       </mt-popup>
     </div>
     
@@ -17,8 +17,7 @@
 </template>
 
 <script>
-  import { getCount } from './vuex/getters'
-  import count from './template/count.vue'
+  import leftTemp from './components/leftTemp.vue'
 
   export default {
     name: 'app',
@@ -34,7 +33,7 @@
       }
     },
     components: {
-      count: count
+      leftTemp
     }
   }
 </script>
@@ -46,11 +45,11 @@
 
   @font-face {
     font-family: 'iconfont';  /* project id："177182" */
-    src: url('//at.alicdn.com/t/font_r4umgtn06gz257b9.eot');
-    src: url('//at.alicdn.com/t/font_r4umgtn06gz257b9.eot') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_r4umgtn06gz257b9.woff') format('woff'),
-    url('//at.alicdn.com/t/font_r4umgtn06gz257b9.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_r4umgtn06gz257b9.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_d6l6nuzzivayk3xr.eot');
+    src: url('//at.alicdn.com/t/font_d6l6nuzzivayk3xr.eot') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_d6l6nuzzivayk3xr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_d6l6nuzzivayk3xr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_d6l6nuzzivayk3xr.svg#iconfont') format('svg');
   }
   .iconfont{
     font-family:"iconfont" !important;

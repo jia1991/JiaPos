@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
 import App from './App.vue'
-import store from './vuex/store'
+import store from './store'
 
 Vue.use(Mint);
 
