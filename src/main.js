@@ -4,6 +4,7 @@ import 'mint-ui/lib/style.css';
 import App from './App.vue'
 import store from './store'
 
+
 Vue.use(Mint);
 
 new Vue({

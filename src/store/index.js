@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import Resource from 'vue-resource'
 import * as getters from './getters'
 import * as actions from './actions'
 import * as mutations from './mutations'
 
 Vue.use(Vuex)
+Vue.use(Resource)
 
 const state = {
   count: 0,
