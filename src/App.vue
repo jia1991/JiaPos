@@ -47,13 +47,13 @@
   }
 
   @font-face {
-    font-family: 'iconfont';  /* project id："177182" */
-    src: url('//at.alicdn.com/t/font_d6l6nuzzivayk3xr.eot');
-    src: url('//at.alicdn.com/t/font_d6l6nuzzivayk3xr.eot') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_d6l6nuzzivayk3xr.woff') format('woff'),
-    url('//at.alicdn.com/t/font_d6l6nuzzivayk3xr.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_d6l6nuzzivayk3xr.svg#iconfont') format('svg');
-  }
+  font-family: 'iconfont';  /* project id："177182" */
+  src: url('//at.alicdn.com/t/font_trd7mylhrdfe0zfr.eot');
+  src: url('//at.alicdn.com/t/font_trd7mylhrdfe0zfr.eot') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_trd7mylhrdfe0zfr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_trd7mylhrdfe0zfr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_trd7mylhrdfe0zfr.svg#iconfont') format('svg');
+}
   .iconfont{
     font-family:"iconfont" !important;
     font-size:24px;
@@ -67,7 +67,7 @@
     height: 100%
   }
   .main-header .mint-header {
-    height: 50px
+    height: 55px
   }
   .main-header .mint-header-title {
     font-size: x-large;

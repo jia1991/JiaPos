@@ -4,6 +4,7 @@
 
 export const increment = ({ commit }) => commit('increment')
 export const decrement = ({ commit }) => commit('decrement')
+// export const updateGroup = ({ commit }) => commit('updateGroup')
 
 export const incrementIfOdd = ({ commit, state }) => {
   if ((state.count + 1) % 2 === 0) {
@@ -15,4 +16,16 @@ export const incrementAsync = ({ commit }) => {
   setTimeout(() => {
     commit('decrement')
   }, 1000)
+}
+
+export const updateGroupDevs = ({commit, state},groupDevs) => {
+	var groupList = state.groupList
+	for (var i = groupList.length - 1; i >= 0; i--) {
+		if(groupList[i].jname ==groupDevs.gname) {
+			groupList[i].devs = groupDevs.devs;
+			break
+		}
+	}
+	console.log(groupList)
+	commit('updateGroup', groupList)
 }

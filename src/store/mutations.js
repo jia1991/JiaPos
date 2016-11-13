@@ -11,3 +11,7 @@ export const decrement = state => {
   state.count--
   state.history.push('decrement')
 }
+
+export const updateGroup = (state,groupList) => {
+  state.groupList = groupList;
+}
