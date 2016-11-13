@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-for="group in $store.state.groupList" @click="showGroup(group)">
+        <div v-for="group in groupList" @click="showGroup(group)">
             <mt-cell>
                 <div slot="title"><i class="group-icon">&#xe634;</i> {{group.jname}}</div>
                 <small>[{{group.online_num}}/{{group.dnum}}]</small>
@@ -21,6 +21,11 @@
             return {
              test: 123456 
          }
+     },
+     computed: {
+        groupList () {
+            return this.$store.state.groupList
+        }
      },
      methods: {
         showGroup (group) {
