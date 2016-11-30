@@ -1,14 +1,11 @@
 <template>
   <div id="app">
-    <div class="main-header">
-      <mt-header title="定位">
-        <mt-button slot="left" @click.native="startHacking">
-          <i class="iconfont">&#xe6cf;</i>
-        </mt-button>
-        <mt-button icon="more" slot="right"></mt-button>
-      </mt-header>
-    </div>
-    
+    <mt-header title="定位">
+      <mt-button slot="left" @click.native="startHacking">
+        <i class="iconfont">&#xe6cf;</i>
+      </mt-button>
+      <mt-button icon="more" slot="right"></mt-button>
+    </mt-header>
     <h1>{{ msg }}{{$store.state.count}}</h1>
     <div class="menu">
       <mt-popup v-model="popupVisible" position="left">
@@ -66,11 +63,4 @@
     width: 80%;
     height: 100%
   }
-  .main-header .mint-header {
-    height: 50px
-  }
-  .main-header .mint-header-title {
-    font-size: x-large;
-  }
-
 </style>

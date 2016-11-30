@@ -130,22 +130,13 @@
     padding: 2px;
   }
   .ja-search-label{
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: #9b9b9b;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 12px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    color: gray;
   }
   .ja-search-icon{
     font-size: 12px
