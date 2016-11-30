@@ -8,19 +8,18 @@
         <mt-button icon="more" slot="right"></mt-button>
       </mt-header>
     </div>
-    
-    <h1>{{ msg }}{{$store.state.count}}</h1>
     <div class="menu">
       <mt-popup v-model="popupVisible" position="left">
         <left-temp></left-temp>
       </mt-popup>
     </div>
-    
+    <map-cont></map-cont>
   </div>
 </template>
 
 <script>
   import leftTemp from './components/leftTemp.vue'
+  import mapCont from './components/mapCont.vue'
 
   export default {
     name: 'app',
@@ -36,7 +35,8 @@
       }
     },
     components: {
-      leftTemp
+      leftTemp,
+      mapCont
     }
   }
 </script>

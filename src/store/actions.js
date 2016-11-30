@@ -27,6 +27,6 @@ export const updateGroupDevs = ({commit, state},groupDevs) => {
 			break
 		}
 	}
-	console.log(groupList)
+	//console.log(groupList)
 	commit('updateGroup', groupList)
 }
