@@ -8,6 +8,13 @@
   <body>
     <div id="app"></div>
     <script src="/dist/build.js"></script>
-    <script src="http://api.map.baidu.com/api?v=2.0&ak=v56jZ8x7GCwaY4mF3wDVozrN"></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=v56jZ8x7GCwaY4mF3wDVozrN&callback=init"></script>
+    <script type="text/javascript">
+    	var init = function (argument) {
+    		var map = new BMap.Map("map"); 
+    		var point = new BMap.Point(116.404, 39.915);
+    		map.centerAndZoom(point, 15);  
+    	}
+    </script>
   </body>
 </html>

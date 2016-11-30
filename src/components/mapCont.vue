@@ -1,19 +1,14 @@
 <template>
-    <div>
-       55555
+    <div id="map" :style="mapstyle">
+       
    </div>
 </template>
 <script>
     export default {
         data(){
-            var timer = setInterval(function () {
-                if(BMap){
-                    console.log(BMap);
-                    clearInterval(timer);
-                }
-            },1000)
+            var mapheight = document.documentElement.clientHeight - 55 + 'px'
             return {
-               test: 123456 
+               mapstyle:{'height': mapheight}
            }
        },
        computed: {
@@ -23,3 +18,8 @@
     }
 }
 </script> 
+<style>
+    #map {
+        width: 100%;
+    }
+</style>
