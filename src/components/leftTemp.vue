@@ -1,13 +1,15 @@
 <template>
   <div>
+  <div class="left-header">
     <mt-header title="设备列表" v-show="!searching">
       <mt-button slot="left">
-        <small>管理</small>
+        管理
       </mt-button>
       <mt-button slot="right">
-        <small>添加</small>
+        添加
       </mt-button>
     </mt-header>
+  </div>
     <ja-search cancel-text="" placeholder="搜索" cancel-text="取消" v-on:input='search($event)'>545454</ja-search>
     <dev-list></dev-list>
   </div>
@@ -38,5 +40,10 @@
 </script>
 
 <style>
-
+  .left-header .mint-header {
+    height: 50px
+  }
+  .left-header .mint-header-title {
+    font-size: large;
+  }
 </style>
