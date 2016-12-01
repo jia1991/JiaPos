@@ -15,3 +15,7 @@ export const decrement = state => {
 export const updateGroup = (state,groupList) => {
   state.groupList = groupList;
 }
+
+export const setSelfPos = (state, posData) => {
+	state.selfPos.posData = posData;
+}

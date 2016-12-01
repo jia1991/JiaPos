@@ -30,3 +30,8 @@ export const updateGroupDevs = ({commit, state},groupDevs) => {
 	//console.log(groupList)
 	commit('updateGroup', groupList)
 }
+
+export const setSelfPos = (({ commit }, posData) => {
+	//state.selfPos.posData = posData;
+	commit('setSelfPos', posData)
+})

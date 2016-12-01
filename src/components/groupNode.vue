@@ -10,7 +10,7 @@
     </div>
     <div v-show="show">
       <mt-cell v-for="dev in groupData.devs">
-        <div slot="title" style="margin-left: 20px">
+        <div slot="title" style="margin-left: 20px" @click="getPos(dev.imei)">
           <i class="dev-icon" :style="[dev.sta&&({color:'#26a2ff'})]">&#xe737;</i>{{dev.dname}}
         </div>
       </mt-cell>
@@ -42,6 +42,22 @@
           this.$store.dispatch('updateGroupDevs',{gname,devs})
           this.show = true;
         })
+      },
+      getPos (imei) {
+        var params = {imei}
+        this.$http.get('/devices/status',{params})
+        .then((res) => {
+          if(res.body.errorcode == '0') {
+            //window.map.clearOverlays()
+            var data = res.body.data;
+            var point = new BMap.Point(data.blng, data.blat);
+            window.map.panTo(point, 15);  
+            window.marker.setPosition(point)
+            //window.map.addOverlay(marker);
+            this.$emit('closeLeft')
+          }
+        });
+        
       }
     }
   }

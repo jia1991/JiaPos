@@ -11,7 +11,7 @@
     </mt-header>
   </div>
     <ja-search cancel-text="" placeholder="搜索" cancel-text="取消" v-on:input='search($event)'>545454</ja-search>
-    <dev-list></dev-list>
+    <dev-list @closeLeft="test"></dev-list>
   </div>
 </template>
 
@@ -29,6 +29,9 @@
     methods: {
       search (e) {
         this.searching = e;
+      },
+      test () {
+        this.$emit('closeLeft')
       }
     },
     components: {
