@@ -48,11 +48,11 @@
         this.$http.get('/devices/status',{params})
         .then((res) => {
           if(res.body.errorcode == '0') {
-            //window.map.clearOverlays()
             var data = res.body.data;
-            var point = new BMap.Point(data.blng, data.blat);
+            this.$store.dispatch('setOtherPos',data)
+            /*var point = new BMap.Point(data.blng, data.blat);
             window.map.panTo(point, 15);  
-            window.marker.setPosition(point)
+            window.marker.setPosition(point)*/
             //window.map.addOverlay(marker);
             this.$emit('closeLeft')
           }

@@ -31,7 +31,14 @@ export const updateGroupDevs = ({commit, state},groupDevs) => {
 	commit('updateGroup', groupList)
 }
 
-export const setSelfPos = (({ commit }, posData) => {
-	//state.selfPos.posData = posData;
-	commit('setSelfPos', posData)
+export const setSelfPos = (({ commit,state }, stateData) => {
+	var selfPos = state.selfPos;
+	Vue.set(selfPos,'stateData', stateData);
+	commit('setSelfPos', selfPos)
+})
+
+export const setOtherPos = (({ commit,state }, stateData) => {
+	var otherPos = state.otherPos;
+	Vue.set(otherPos,'stateData', stateData);
+	commit('setOhterfPos', otherPos)
 })

@@ -28,6 +28,9 @@
     },
     components: {
         groupNode
+    },
+    watch: {
+       
     }
 }
 </script>

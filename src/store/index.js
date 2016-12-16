@@ -11,8 +11,6 @@ const state = {
   //host: '192.168.1.100:3000',
   count: 0,
   selfPos: {
-    imei: '',
-    posData: {}
   },
   otherPos: {},
   groupList: []

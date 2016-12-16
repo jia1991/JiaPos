@@ -16,6 +16,10 @@ export const updateGroup = (state,groupList) => {
   state.groupList = groupList;
 }
 
-export const setSelfPos = (state, posData) => {
-	state.selfPos.posData = posData;
+export const setSelfPos = (state, selfPos) => {
+	state.selfPos = selfPos;
+}
+
+export const setOhterfPos = (state, otherPos) => {
+	state.otherPos = otherPos;
 }
